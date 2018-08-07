@@ -1,0 +1,49 @@
+<view class="container">
+
+  <view class="selection">
+    <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+      <block wx:for="{{imgUrls}}" >
+        <swiper-item  class="item_image">
+          <image src="{{item}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="selection">
+    <view class="header">
+      <text>精品推荐</text>
+      <text class="text-all">全部精品</text>
+    </view>
+    <view class="content">
+       <view class="content-item" wx:for="{{contentItems}}">
+          <image src="../../images/img1.jpg"></image>
+          <view class="content-item-text">
+            <text>小米6x</text>
+          </view>
+       </view>
+    </view>  
+  </view>
+
+  <view class="selectionr">
+    <view class="header">
+      <text>热门评测</text>
+      <text class="text-all">全部评测</text>
+    </view>
+    <view class="list-item"  wx:for="{{listitem}}">
+      <view class="list-item-images">
+        <image class="list-item-images-image" src="../../images/img2.jpg"></image>
+        <image class="avatar" src="../../images/avatar.png"></image>
+      </view>
+      <view class="list-text">
+        <view class="list-title">
+          小米6X
+        </view>
+        <view class="list-content">
+          轻薄美观的拍照手机 / 前置2000万“治愈系”自拍 / 后置2000万 AI双摄 / 标配骁龙660 AIE处理器
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
