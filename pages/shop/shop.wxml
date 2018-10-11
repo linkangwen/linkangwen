@@ -1,0 +1,31 @@
+
+、
+<view class="content-box">
+
+  <view class="content-left">
+    <image src="../../images/img2.jpg"></image>
+  </view>
+  <view class="content-right">
+    <view class="title"><text>honor x6</text></view>
+    <view class="note"><text>5.0寸屏幕/指纹解锁/2000万像素</text></view>
+    <view class="price"><text>$</text><text>999.00</text></view>
+    <view class=" fare"><text>运费</text><text>¥10 （订单满288免运费）</text></view>
+    <view class="size">
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view> 
+  </view>
+
+  <view class="image-show"  wx:for="{{imgUrl}}">
+      <image src="{{item}}"></image>
+  </view>
+
+  <view class="btn-box">
+    <navigator class="btn">立即购买</navigator>
+    <navigator class="collect">收藏</navigator>
+  </view>
+  
+</view>

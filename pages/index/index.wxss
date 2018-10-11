@@ -28,8 +28,7 @@
 .content-item{
   height: 250rpx;
   width: 49%;
-  background-color: red;
-  margin:0.5%;
+  margin: 0.5%;
   position: relative;
 }
 .content-item image{
